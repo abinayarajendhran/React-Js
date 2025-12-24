@@ -1,0 +1,13 @@
+import React, { useState } from "react";
+function PasswordToggle() {
+  const [show, setShow] = useState("");
+  return (
+    <div>
+      <input type={show ? "text" : "password"} />
+      <button onClick={() => setShow(!show)}>
+        {show ? "Hide" : "Show"}
+      </button>
+    </div>
+  );
+}
+export default PasswordToggle;
